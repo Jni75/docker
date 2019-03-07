@@ -1,0 +1,1 @@
+FROM bianjp/mariadb-alpine
