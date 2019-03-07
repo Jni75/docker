@@ -57,7 +57,7 @@ Sample :
 Starting it with allowed relay networks
 
     docker run -d --name smtp \
-        -e MAILNAME=exemple.com \
+        -e MAILNAME=example.com \
         -e RELAY_NETWORKS=:172.17.0.0/16 \
         smtp
 

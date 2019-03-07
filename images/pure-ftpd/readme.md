@@ -19,7 +19,7 @@ With options :
     docker run -d --name pure-ftpd \
         -v /data/user:/data \
         -v /data/pure-ftpd/passwd:/etc/pure-ftpd/passwd/ \
-        -e PUBLICHOST=exemple.com \
+        -e PUBLICHOST=example.com \
         -e FTP_USER_NAME=username \
         -e FTP_USER_PASS=password \
         -e FTP_USER_HOME=/data \

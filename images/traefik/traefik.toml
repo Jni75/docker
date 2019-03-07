@@ -1,0 +1,76 @@
+################################################################
+# Global configuration
+################################################################
+
+debug = false
+checkNewVersion = false
+logLevel = "INFO"
+defaultEntryPoints = ["http"]
+
+[retry]
+
+################################################################
+# Entrypoints configuration
+################################################################
+
+[entryPoints]
+  [entryPoints.http]
+  address = ":80"
+  [entryPoints.https]
+  address = ":443"
+  [entryPoints.https.tls]
+
+################################################################
+# ACME configuration
+################################################################
+
+[acme]
+email = "postmaster@exemple.com"
+storage = "acme.json"
+entryPoint = "https"
+OnHostRule = true
+
+[acme.httpChallenge]
+entryPoint = "http"
+
+################################################################
+# Traefik logs configuration
+################################################################
+
+#[traefikLog]
+#filePath = "log/traefik.log"
+#format = "common"
+
+################################################################
+# Access logs configuration
+################################################################
+
+[accessLog]
+filePath = "log/access.txt"
+format = "common"
+
+################################################################
+# API and dashboard configuration
+################################################################
+
+[api]
+entryPoint = "traefik"
+dashboard = true
+
+################################################################
+# Ping configuration
+################################################################
+
+[ping]
+entryPoint = "traefik"
+
+################################################################
+# Docker configuration backend
+################################################################
+
+[docker]
+endpoint = "unix:///var/run/docker.sock"
+watch = true
+domain = "exemple.com"
+exposedbydefault = false
+
