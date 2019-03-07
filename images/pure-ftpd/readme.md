@@ -26,6 +26,8 @@ With options :
         -e FTP_USER_UID=uid \
         -e FTP_USER_GID=gid \
         -e FTP_PASSIVE_PORTS=30000:30100 \
+        -e MAX_CLIENTS=50 \
+        -e MAX_REQUESTS_PER_IP=20 \
         -p 21:21 \
         -p 30000-30100:30000-30100 \
         pure-ftpd
