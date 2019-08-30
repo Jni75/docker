@@ -1,4 +1,4 @@
-# Pure-FTPD Ready Docker Image
+# Exim4 Ready Docker Image
 
 SMTP server for internal use (by the containers)
 
