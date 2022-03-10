@@ -1,4 +1,4 @@
-# Pure-FTPD Ready Docker Image
+# Traefik
 
 [Traefik](https://traefik.io/) is a reverse proxy / load balancer that's easy, dynamic, automatic, fast, full-featured, open source, production proven, provides metrics, and integrates with every major cluster technology...
 
