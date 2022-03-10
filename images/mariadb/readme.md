@@ -1,4 +1,4 @@
-# Pure-FTPD Ready Docker Image
+# MariaDB Docker Image
 
 Fork from https://github.com/bianjp/docker-mariadb-alpine
 
